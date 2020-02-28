@@ -36,6 +36,7 @@ header {
 }
 
 .header-right {
+    display: flex;
     height: 100%;
     width: 60%;
     float: right;
@@ -43,7 +44,7 @@ header {
 }
 
 .menu {
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,12 +54,16 @@ header {
     position: relative;
     padding: 10px 20px;
     /* da rimuovere */
+    /* border-bottom: 2px solid #61ce4e; */
+}
+
+.menu-item:hover {
     border-bottom: 2px solid #61ce4e;
 }
 
-/* .menu-item.active {
+.menu-item.active {
     border-bottom: 2px solid #61ce4e;
-} */
+}
 
 .menu-item a {
     text-transform: uppercase;

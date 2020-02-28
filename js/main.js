@@ -9,6 +9,9 @@ $(document).ready(function(){
         }
     });
 
-
+    $('.menu-item').click(function(){
+        $(this).addClass('active');
+        $(this).siblings('.menu-item').removeClass('active');
+    })
 
 });

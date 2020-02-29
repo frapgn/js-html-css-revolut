@@ -18,9 +18,6 @@ $(document).ready(function(){
         $(this).addClass('active');
         $(this).siblings('.menu-item').removeClass('active');
 
-        // icon rotation
-
-
     });
 
 

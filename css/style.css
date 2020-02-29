@@ -53,8 +53,9 @@ header {
 .menu-item {
     position: relative;
     padding: 10px 20px;
+    margin: 0 5px;
     /* da rimuovere */
-    /* border-bottom: 2px solid #61ce4e; */
+    border-bottom: 2px solid rgba(0,0,0,0);
 }
 
 .menu-item:hover {
@@ -70,6 +71,30 @@ header {
     font-size: 17px;
     text-decoration: none;
     color: #1b3c59;
+}
+
+.corso::after,
+.dopo-il-corso::after {
+    margin-left: 5px;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+.corso::after,
+.dopo-il-corso::after {
+    font-family: "FontAwesome";
+    font-weight: 900;
+    content: "\f078";
+    font-size: 13px;
+    transition: transform 0.5s;
+}
+
+a.corso.rotate::after,
+a.dopo-il-corso.rotate::after {
+    transform: rotateX(180deg);
 }
 
 .dropdown-menu {
